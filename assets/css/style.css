@@ -88,7 +88,9 @@ nav div {
     height: 60px;
     display: flex;
     background-color: var(--light-green);
-    margin-top: 107px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
     transition: .2s linear;
 }
 
