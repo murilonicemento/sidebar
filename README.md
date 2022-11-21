@@ -9,7 +9,12 @@ Projeto criado através da plataforma Rocketseat - Trilha Discover
 + JavaScript
 
 ## Estrutura do site
-
++ Pesquisar
++ Dashboard
++ Pets
++ Cliente
++ Veterinário
++ Ajustes
 
 ## Home
 

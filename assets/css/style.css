@@ -15,6 +15,20 @@
     --text-color: #084236;
 }
 
+.open {
+    --aside-width: 250px;
+    --p-visibility: inherit;
+    --button-width: 200px;
+    --img-button-margin-top: 0;
+}
+
+.close {
+    --aside-width: 76px;
+    --p-visibility: hidden;
+    --button-width: 50px;
+    --img-button-margin-top: 12px;
+}
+
 body {
     height: 100vh;
     background-color: var(--body-bg-color);
@@ -24,11 +38,12 @@ body {
 
 /* ESTILIZAÇÃO ASIDE */
 aside {
-    width: 250px;
+    width: var(--aside-width);
     height: 100%;
     float: left;
     background-color: var(--green);
     margin-right: 18px;
+    transition: .2s linear;
 }
 
 header {
@@ -42,7 +57,7 @@ header img:nth-child(2) {
 }
 
 nav span {
-    width: 200px;
+    width: var(--button-width);
     height: 50px;
     display: flex;
     flex-wrap: wrap;
@@ -58,17 +73,23 @@ nav span {
     border-radius: 12px;
 }
 
+nav span p {
+    visibility: var(--p-visibility);
+}
+
 nav span img {
+    margin-top: var(--img-button-margin-top);
     margin-right: 13px;
     margin-left: 13px;
 }
 
 nav div {
-    width: 251px;
+    width: var(--aside-width);
     height: 60px;
     display: flex;
     background-color: var(--light-green);
     margin-top: 107px;
+    transition: .2s linear;
 }
 
 nav div span {
@@ -78,7 +99,7 @@ nav div span {
 nav div span p:first-child {
     font-size: 15px;
     margin-top: 12px;
-    margin-bottom: -15px;
+    margin-bottom: -5px;
 }
 
 nav div span p {
@@ -89,6 +110,7 @@ nav div img:first-child {
     width: 45px;
     height: 45px;
     margin: 8px 9px 7px 14px;
+    visibility: var(--p-visibility);
 }
 
 nav div img {
