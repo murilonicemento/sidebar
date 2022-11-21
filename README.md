@@ -2,6 +2,7 @@
 Projeto criado através da plataforma Rocketseat - Trilha Discover
 
 ## Deploy da aplicação
+https://sidebar-eta.vercel.app/
 
 ## Tecnologias utilizadas
 + HTML5
